@@ -1,16 +1,8 @@
-#include <cstdlib>
 #include <stdio.h>
-#include <unistd.h>
-#include <string.h>
 #include <map>
-#include <iostream>
-#include <bitset>
 #include "Stopwatch.h"
 #include <unordered_map>
-
 #include "arg/core/cHugeArray.h"
-
-#define KMER_LENGTH 5
 
 namespace arg {
 	namespace dna {
