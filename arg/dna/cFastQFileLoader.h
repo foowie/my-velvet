@@ -55,7 +55,7 @@ namespace arg {
 			}
 
 			void Reset() {
-				throw "Reset is not implemented";
+				rewind(file);
 			}
 
 			void Close() {

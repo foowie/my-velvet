@@ -14,6 +14,7 @@
         <logicalFolder name="dna" displayName="dna" projectFiles="true">
           <itemPath>arg/dna/BaseTypes.h</itemPath>
           <itemPath>arg/dna/cDnaLine.h</itemPath>
+          <itemPath>arg/dna/cFastAFileWriter.h</itemPath>
           <itemPath>arg/dna/cFastQFileLoader.h</itemPath>
           <itemPath>arg/dna/cKmerBuilder.h</itemPath>
           <itemPath>arg/dna/cKmerOccurenceMap.h</itemPath>
@@ -96,6 +97,8 @@
       </item>
       <item path="arg/dna/cDnaLine.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="arg/dna/cFastAFileWriter.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="arg/dna/cFastQFileLoader.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/dna/cKmerBuilder.h" ex="false" tool="3" flavor2="0">
@@ -165,6 +168,8 @@
       <item path="arg/dna/BaseTypes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/dna/cDnaLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cFastAFileWriter.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/dna/cFastQFileLoader.h" ex="false" tool="3" flavor2="0">
       </item>

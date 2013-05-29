@@ -3,13 +3,13 @@
 #include "Memwatch.h"
 
 #include "arg/dna/cFastQFileLoader.h"
+#include "arg/dna/cFastAFileWriter.h"
 #include "arg/dna/cKmerBuilder.h"
 #include "arg/dna/cKmerOccurenceMapUnorderedMap.h"
 #include "arg/dna/cRoadmapBuilder.h"
 
 namespace arg {
 	namespace dna {
-
 	}
 }
 
@@ -21,11 +21,16 @@ int main(int argc, char** argv) {
 		//		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/1/frag_2.fastq";
 		//		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/0/NN.fastq";
 		//		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/0/40lines.fastq";
-		//		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/1/400.fastq";
-		char * sourcefilename = argv[1];
+		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/1/400.fastq";
+		char * fastafilename = (char*) "/home/danrob/VSB/DNATests/FASTA.fasta";
+//		char * sourcefilename = argv[1];
 
 
 		arg::dna::cFastQFileLoader loader(sourcefilename);
+		arg::dna::cFastAFileWriter writer(loader);
+		writer.SaveToFile(fastafilename);
+		printf("%u\t%u\t%u\t%u\n", writer.GetRecordCount(), 0U, 0U, 0U);
+		
 		arg::dna::cKmerBuilder kmerBuilder(loader, 31);
 //		arg::dna::cKmerOccurenceMapRBTree map;
 		arg::dna::cKmerOccurenceMapUnorderedMap map;

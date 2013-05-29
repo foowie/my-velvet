@@ -33,6 +33,7 @@ namespace arg {
 				if (kmerLength > 32) {
 					throw "Kmer length cant be longer than 32";
 				}
+				loader.Reset();
 				nucleoideTable['N'] = nucleoideTable['n'] = BASE_A;
 				nucleoideTable['A'] = nucleoideTable['a'] = BASE_A;
 				nucleoideTable['C'] = nucleoideTable['c'] = BASE_C;
