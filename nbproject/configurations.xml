@@ -11,6 +11,17 @@
           <itemPath>arg/core/cHugeArray.h</itemPath>
           <itemPath>arg/core/cIterator.h</itemPath>
         </logicalFolder>
+        <logicalFolder name="dna" displayName="dna" projectFiles="true">
+          <itemPath>arg/dna/BaseTypes.h</itemPath>
+          <itemPath>arg/dna/cDnaLine.h</itemPath>
+          <itemPath>arg/dna/cFastQFileLoader.h</itemPath>
+          <itemPath>arg/dna/cKmerBuilder.h</itemPath>
+          <itemPath>arg/dna/cKmerOccurenceMap.h</itemPath>
+          <itemPath>arg/dna/cKmerOccurenceMapRBTree.h</itemPath>
+          <itemPath>arg/dna/cKmerOccurenceMapUnorderedMap.h</itemPath>
+          <itemPath>arg/dna/cLoader.h</itemPath>
+          <itemPath>arg/dna/cRoadmapBuilder.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="f2" displayName="utils" projectFiles="true">
           <itemPath>arg/utils/cConfigurator.h</itemPath>
           <itemPath>arg/utils/cMersenneTwister.h</itemPath>
@@ -18,10 +29,8 @@
           <itemPath>arg/utils/cTimer.h</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>HashMap.h</itemPath>
       <itemPath>Memwatch.h</itemPath>
       <itemPath>Stopwatch.h</itemPath>
-      <itemPath>Watch.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -52,6 +61,9 @@
     </logicalFolder>
     <itemPath>.gitignore</itemPath>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>arg/dna</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -68,13 +80,9 @@
       </compileType>
       <item path=".gitignore" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="HashMap.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Memwatch.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Stopwatch.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Watch.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/core/cArray.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -83,6 +91,27 @@
       <item path="arg/core/cHugeArray.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/core/cIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/BaseTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDnaLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cFastQFileLoader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerOccurenceMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerOccurenceMapRBTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerOccurenceMapUnorderedMap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arg/dna/cLoader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cRoadmapBuilder.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/utils/cConfigurator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -121,13 +150,9 @@
       </compileType>
       <item path=".gitignore" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="HashMap.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Memwatch.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Stopwatch.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Watch.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/core/cArray.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -136,6 +161,27 @@
       <item path="arg/core/cHugeArray.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/core/cIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/BaseTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDnaLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cFastQFileLoader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerOccurenceMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerOccurenceMapRBTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cKmerOccurenceMapUnorderedMap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arg/dna/cLoader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cRoadmapBuilder.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/utils/cConfigurator.h" ex="false" tool="3" flavor2="0">
       </item>
