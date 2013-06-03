@@ -56,6 +56,8 @@ namespace arg {
 
 			void Reset() {
 				rewind(file);
+				currentLine->index = 0;
+				
 			}
 
 			void Close() {
