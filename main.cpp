@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 
 	try {
 		unsigned short kmerLength = 31;
-		//		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/1/frag_2.fastq";
+//				char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/1/frag_2.fastq";
 		//		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/0/NN.fastq";
 		//		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/0/40lines.fastq";
 //		char * sourcefilename = (char*) "/home/danrob/VSB/DNATests/1/400.fastq";
@@ -31,10 +31,8 @@ int main(int argc, char** argv) {
 		arg::dna::cFastAFileWriter writer(loader);
 		writer.SaveToFile(fastafilename);
 		printf("%u\t%u\t%u\t%u\n", writer.GetRecordCount(), 0U, kmerLength, 0U);
-		printf("%u\t%u\t%u\t%u\n", writer.GetRecordCount(), 0U, 0U, 0U);
 		
 		arg::dna::cKmerBuilder kmerBuilder(loader, kmerLength);
-		arg::dna::cKmerBuilder kmerBuilder(loader, 31);
 //		arg::dna::cKmerOccurenceMapRBTree map;
 		arg::dna::cKmerOccurenceMapUnorderedMap map;
 		arg::dna::cRoadmapBuilder roadmapBuilder(kmerBuilder, map);

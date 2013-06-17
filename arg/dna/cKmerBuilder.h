@@ -23,7 +23,7 @@ namespace arg {
 			unsigned short offset;
 			unsigned short kmerLength;
 			bool lineChanged;
-			Kmer nucleoideTable[256];
+			Kmer nucleoideTable[256], strandNucleoideTable[256];
 		public:
 
 			cKmerBuilder(cLoader & loader, const unsigned short kmerLength) {
@@ -35,10 +35,10 @@ namespace arg {
 				}
 				loader.Reset();
 				nucleoideTable['N'] = nucleoideTable['n'] = BASE_A;
-				nucleoideTable['A'] = nucleoideTable['a'] = BASE_A;
-				nucleoideTable['C'] = nucleoideTable['c'] = BASE_C;
-				nucleoideTable['G'] = nucleoideTable['g'] = BASE_G;
-				nucleoideTable['T'] = nucleoideTable['t'] = BASE_T;
+				nucleoideTable['A'] = nucleoideTable['a'] = strandNucleoideTable['T'] = strandNucleoideTable['t'] = BASE_A;
+				nucleoideTable['C'] = nucleoideTable['c'] = strandNucleoideTable['G'] = strandNucleoideTable['g'] = BASE_C;
+				nucleoideTable['G'] = nucleoideTable['g'] = strandNucleoideTable['C'] = strandNucleoideTable['c'] = BASE_G;
+				nucleoideTable['T'] = nucleoideTable['t'] = strandNucleoideTable['A'] = strandNucleoideTable['a'] = BASE_T;
 			};
 
 			inline const unsigned short GetKmerLength() const {
@@ -88,6 +88,15 @@ namespace arg {
 				for (unsigned short i = 0; i < kmerLength; i++) {
 					kmer <<= 2;
 					kmer |= nucleoideTable[line->sequence[i + offset]];
+				}
+				return kmer;
+			}
+
+			inline const Kmer GetStrandKmer() const {
+				Kmer kmer = 0;
+				for (unsigned short i = kmerLength - 1; i >= 0; i--) {
+					kmer <<= 2;
+					kmer |= strandNucleoideTable[line->sequence[i + offset]];
 				}
 				return kmer;
 			}
