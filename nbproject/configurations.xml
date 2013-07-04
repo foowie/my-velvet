@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="88">
+<configurationDescriptor version="89">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -13,6 +13,10 @@
         </logicalFolder>
         <logicalFolder name="dna" displayName="dna" projectFiles="true">
           <itemPath>arg/dna/BaseTypes.h</itemPath>
+          <itemPath>arg/dna/cDeBruijnEdge.h</itemPath>
+          <itemPath>arg/dna/cDeBruijnGraph.h</itemPath>
+          <itemPath>arg/dna/cDeBruijnGraphBuilder.h</itemPath>
+          <itemPath>arg/dna/cDeBruijnNode.h</itemPath>
           <itemPath>arg/dna/cDnaLine.h</itemPath>
           <itemPath>arg/dna/cFastAFileWriter.h</itemPath>
           <itemPath>arg/dna/cFastQFileLoader.h</itemPath>
@@ -22,6 +26,7 @@
           <itemPath>arg/dna/cKmerOccurenceMapUnorderedMap.h</itemPath>
           <itemPath>arg/dna/cLoader.h</itemPath>
           <itemPath>arg/dna/cRoadmapBuilder.h</itemPath>
+          <itemPath>arg/dna/cStringLineLoader.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="utils" projectFiles="true">
           <itemPath>arg/utils/cConfigurator.h</itemPath>
@@ -95,6 +100,14 @@
       </item>
       <item path="arg/dna/BaseTypes.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="arg/dna/cDeBruijnEdge.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDeBruijnGraph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDeBruijnGraphBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDeBruijnNode.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="arg/dna/cDnaLine.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/dna/cFastAFileWriter.h" ex="false" tool="3" flavor2="0">
@@ -115,6 +128,8 @@
       <item path="arg/dna/cLoader.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/dna/cRoadmapBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cStringLineLoader.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/utils/cConfigurator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -167,6 +182,14 @@
       </item>
       <item path="arg/dna/BaseTypes.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="arg/dna/cDeBruijnEdge.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDeBruijnGraph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDeBruijnGraphBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cDeBruijnNode.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="arg/dna/cDnaLine.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/dna/cFastAFileWriter.h" ex="false" tool="3" flavor2="0">
@@ -187,6 +210,8 @@
       <item path="arg/dna/cLoader.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/dna/cRoadmapBuilder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arg/dna/cStringLineLoader.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="arg/utils/cConfigurator.h" ex="false" tool="3" flavor2="0">
       </item>
